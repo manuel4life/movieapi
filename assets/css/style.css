@@ -7,35 +7,66 @@ body{
     line-height: 1.6;
     margin: 0;
     padding: 0;
+    background: url(../images/poster1.jpg);
+    background-size:contain;
 }
 main{
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     height: 100vh;
-    /* background: url(../images/poster1.jpg); */
-    background-repeat: no-repeat;
-    background-size:cover;
 }
 
 .movie{
     background: #fff;
     padding: 20px;
-    /* margin: 20px 0; */
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: end;
     align-items: start;
     flex-direction:column;
-    height:250px;
-    width:200px;
+    height:300px;
+    width:250px;
+}
+
+.movie:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+    cursor: pointer;
 }
 
 #movies-container{
-    border:1px solid red;
-    max-height: 900px;
-    height:800px;
     padding:10px;
     padding-top: 0;
+    display: flex;
+    gap: 20px;
+    flex-wrap:wrap;
+}
+
+#pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.btn{
+    padding: 10px 20px;
+    border: none;
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+#next{
+    background-color: orange;
 }
